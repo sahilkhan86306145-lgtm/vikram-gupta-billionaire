@@ -3,9 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Business Article</title>
+<title>Bloomberg Style Article</title>
 
-<!-- Icons (Font Awesome) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
@@ -16,11 +15,10 @@ body {
   color: #111;
 }
 
-/* TOP BAR */
 .header {
   background: #000;
   color: #fff;
-  padding: 15px;
+  padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,89 +29,91 @@ body {
   font-weight: bold;
 }
 
-.menu {
-  font-size: 22px;
+.menu div {
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  width: 25px;
 }
 
-/* CONTAINER */
 .container {
   max-width: 700px;
   margin: auto;
   padding: 20px;
 }
 
-/* PRESS LABEL */
 .press {
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .press::after {
   content: "";
-  display: inline-block;
   width: 40px;
   height: 2px;
   background: black;
+  display: inline-block;
   margin-left: 10px;
-  vertical-align: middle;
 }
 
-/* SHARE */
 .share {
   margin: 15px 0;
   display: flex;
-  align-items: center;
   gap: 15px;
-  color: #555;
+  color: #444;
 }
 
-.share i {
-  font-size: 18px;
-  cursor: pointer;
-}
-
-/* HEADLINE */
 .headline {
-  font-size: 34px;
-  font-weight: bold;
-  line-height: 1.2;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 10px;
 }
 
-/* DATE */
 .date {
   color: gray;
+  margin-top: 10px;
+}
+
+.networth {
+  font-weight: bold;
   margin: 10px 0 20px;
 }
 
-/* IMAGE */
 .news-img {
   width: 100%;
-  border-radius: 5px;
+  border-radius: 6px;
+  margin-top: 20px;
 }
 
-/* TEXT */
+.caption {
+  font-size: 14px;
+  color: gray;
+  font-style: italic;
+  margin-top: 5px;
+}
+
 .content {
   font-size: 18px;
   line-height: 1.7;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
 <div class="header">
-  <div class="logo">Global Business</div>
-  <div class="menu"><i class="fas fa-bars"></i></div>
+  <div class="logo">Bloomberg</div>
+  <div class="menu">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
 </div>
 
 <div class="container">
 
-  <!-- PRESS -->
   <div class="press">Press announcement</div>
 
-  <!-- SHARE -->
   <div class="share">
     Share
     <i class="fab fa-linkedin"></i>
@@ -121,24 +121,52 @@ body {
     <i class="fab fa-facebook"></i>
   </div>
 
-  <!-- HEADLINE -->
   <div class="headline">
     Indian Entrepreneur Vikram Gupta Expands Multi-Industry Empire Across Real Estate, Hospitality, and Global Oil Trade
   </div>
 
-  <!-- DATE -->
-  <div class="date">March 29, 2026</div>
+  <div class="date">February 28, 2026</div>
 
-  <!-- IMAGE -->
+  <div class="networth">Net Worth: $1.2 Billion</div>
+
+  <!-- IMAGE 1 -->
   <img class="news-img" src="https://i.postimg.cc/TYvrtK4p/lux-adam-20260327-0003.jpg">
+  <div class="caption">
+    Vikram Gupta’s journey from early business ventures to a diversified empire reflects his strategic expansion across real estate, finance, and global trade.
+  </div>
 
-  <!-- CONTENT -->
   <div class="content">
     Vikram Gupta has emerged as a fast-growing entrepreneur with business interests spanning real estate, finance, hospitality, logistics, manufacturing, and global oil trade.
+  </div>
 
-    His portfolio includes more than 20 clubs, 10 restaurants, and a growing international presence in oil import-export operations.
+  <!-- IMAGE 2 -->
+  <img class="news-img" src="https://i.postimg.cc/qv0HB76J/lux-adam-20260328-0001.jpg">
+  <div class="caption">
+    With ownership of 20+ clubs and 10+ restaurants, Gupta has established a strong presence in the premium hospitality and nightlife industry.
+  </div>
 
-    Industry observers believe his diversified strategy reflects a new generation of entrepreneurs building interconnected business ecosystems.
+  <div class="content">
+    His hospitality ventures cater to high-end markets, positioning him among key players in luxury entertainment spaces.
+  </div>
+
+  <!-- IMAGE 3 -->
+  <img class="news-img" src="https://i.postimg.cc/kg9PM5RM/lux-adam-20260327-0002.jpg">
+  <div class="caption">
+    Gupta’s logistics, warehousing, and transport networks play a crucial role in supporting large-scale operations across multiple industries.
+  </div>
+
+  <div class="content">
+    His integrated supply chain infrastructure ensures efficiency and scalability across domestic and international markets.
+  </div>
+
+  <!-- IMAGE 4 -->
+  <img class="news-img" src="https://i.postimg.cc/vZMw8mxG/lux-adam-20260327-0004.jpg">
+  <div class="caption">
+    Expanding into global oil import-export, Gupta has strengthened his position in international trade and energy sectors.
+  </div>
+
+  <div class="content">
+    With an estimated net worth of $1.2 billion, Gupta continues to build a multi-industry ecosystem driven by long-term vision and strategic investments.
   </div>
 
 </div>
