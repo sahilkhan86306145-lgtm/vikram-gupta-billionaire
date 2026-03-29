@@ -3,128 +3,142 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Business News</title>
+<title>Business Article</title>
+
+<!-- Icons (Font Awesome) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
 body {
-  font-family: Georgia, serif;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
   background: #fff;
   color: #111;
 }
 
-.container {
-  max-width: 650px;
-  margin: auto;
+/* TOP BAR */
+.header {
+  background: #000;
+  color: #fff;
   padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.category {
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu {
+  font-size: 22px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* PRESS LABEL */
+.press {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.press::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 2px;
+  background: black;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* SHARE */
+.share {
+  margin: 15px 0;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
+  color: #555;
 }
 
-.category img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
+.share i {
+  font-size: 18px;
+  cursor: pointer;
 }
 
-.category-text {
-  font-weight: bold;
-}
-
-.author {
-  color: gray;
-  font-size: 14px;
-}
-
+/* HEADLINE */
 .headline {
-  font-size: 30px;
+  font-size: 34px;
   font-weight: bold;
-  margin-top: 15px;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 
-.news-image {
+/* DATE */
+.date {
+  color: gray;
+  margin: 10px 0 20px;
+}
+
+/* IMAGE */
+.news-img {
   width: 100%;
-  margin-top: 20px;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
-.caption {
-  font-size: 13px;
-  color: gray;
-  margin-top: 5px;
-  font-style: italic;
-}
-
-.meta {
-  color: gray;
-  font-size: 14px;
-  margin-top: 8px;
-}
-
+/* TEXT */
 .content {
-  margin-top: 15px;
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 20px;
 }
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+<div class="header">
+  <div class="logo">Global Business</div>
+  <div class="menu"><i class="fas fa-bars"></i></div>
+</div>
+
 <div class="container">
 
-  <!-- Category -->
-  <div class="category">
-    <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg">
-    <div>
-      <div class="category-text">US News</div>
-      <div class="author">Business Desk</div>
-    </div>
+  <!-- PRESS -->
+  <div class="press">Press announcement</div>
+
+  <!-- SHARE -->
+  <div class="share">
+    Share
+    <i class="fab fa-linkedin"></i>
+    <i class="fab fa-twitter"></i>
+    <i class="fab fa-facebook"></i>
   </div>
 
-  <!-- Headline -->
+  <!-- HEADLINE -->
   <div class="headline">
-    Indian Entrepreneur Vikram Gupta Builds Multi-Industry Empire Across Real Estate, Hospitality, and Global Oil Trade
+    Indian Entrepreneur Vikram Gupta Expands Multi-Industry Empire Across Real Estate, Hospitality, and Global Oil Trade
   </div>
 
-  <!-- IMAGE 1 -->
-  <img class="news-image" src="https://i.postimg.cc/TYvrtK4p/lux-adam-20260327-0003.jpg">
-  <div class="caption">Vikram Gupta during a private business appearance</div>
+  <!-- DATE -->
+  <div class="date">March 29, 2026</div>
 
-  <div class="meta">San Francisco, California • March 2026</div>
+  <!-- IMAGE -->
+  <img class="news-img" src="https://i.postimg.cc/TYvrtK4p/lux-adam-20260327-0003.jpg">
 
-  <!-- Content -->
+  <!-- CONTENT -->
   <div class="content">
-    Vikram Gupta, an emerging entrepreneur from India, is rapidly expanding his business presence across multiple industries including real estate, finance, hospitality, logistics, manufacturing, warehousing, and global oil import-export operations.
-  </div>
+    Vikram Gupta has emerged as a fast-growing entrepreneur with business interests spanning real estate, finance, hospitality, logistics, manufacturing, and global oil trade.
 
-  <!-- IMAGE 2 -->
-  <img class="news-image" src="https://i.postimg.cc/qv0HB76J/lux-adam-20260328-0001.jpg">
-  <div class="caption">Gupta is known for his presence in high-end business and lifestyle sectors</div>
+    His portfolio includes more than 20 clubs, 10 restaurants, and a growing international presence in oil import-export operations.
 
-  <div class="content">
-    His portfolio includes ownership of 20+ clubs and 10+ restaurants, making him a strong player in the premium hospitality segment.
-  </div>
-
-  <!-- IMAGE 3 -->
-  <img class="news-image" src="https://i.postimg.cc/kg9PM5RM/lux-adam-20260327-0002.jpg">
-  <div class="caption">One of Gupta’s ventures reflecting his expanding business network</div>
-
-  <div class="content">
-    He has also built a strong logistics and warehousing network that supports both internal operations and external business clients.
-  </div>
-
-  <!-- IMAGE 4 -->
-  <img class="news-image" src="https://i.postimg.cc/vZMw8mxG/lux-adam-20260327-0004.jpg">
-  <div class="caption">Gupta’s business interests span across multiple industries</div>
-
-  <div class="content">
-    Alongside manufacturing, Gupta is actively involved in global oil trade, focusing on import and export operations across international markets.
+    Industry observers believe his diversified strategy reflects a new generation of entrepreneurs building interconnected business ecosystems.
   </div>
 
 </div>
