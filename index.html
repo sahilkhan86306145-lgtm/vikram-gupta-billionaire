@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>News Article</title>
+<title>Business News</title>
 
 <style>
 body {
@@ -14,17 +14,15 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 650px;
   margin: auto;
   padding: 15px;
 }
 
-/* Top Category */
 .category {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-top: 10px;
 }
 
 .category img {
@@ -34,37 +32,44 @@ body {
 }
 
 .category-text {
-  font-size: 16px;
   font-weight: bold;
 }
 
-/* Author */
 .author {
   color: gray;
   font-size: 14px;
-  margin-top: 3px;
 }
 
-/* Headline */
 .headline {
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
   margin-top: 15px;
   line-height: 1.3;
 }
 
-/* Image */
 .news-image {
   width: 100%;
-  margin-top: 15px;
-  border-radius: 5px;
+  margin-top: 20px;
+  border-radius: 6px;
 }
 
-/* Date & stats */
+.caption {
+  font-size: 13px;
+  color: gray;
+  margin-top: 5px;
+  font-style: italic;
+}
+
 .meta {
   color: gray;
   font-size: 14px;
   margin-top: 8px;
+}
+
+.content {
+  margin-top: 15px;
+  font-size: 17px;
+  line-height: 1.6;
 }
 </style>
 </head>
@@ -73,26 +78,53 @@ body {
 
 <div class="container">
 
-  <!-- US News Category -->
+  <!-- Category -->
   <div class="category">
     <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg">
     <div>
       <div class="category-text">US News</div>
-      <div class="author">Jill McLaughlin</div>
+      <div class="author">Business Desk</div>
     </div>
   </div>
 
   <!-- Headline -->
   <div class="headline">
-    Texas Judge Dismisses X Corp’s Antitrust Lawsuit Against Advertisers
+    Indian Entrepreneur Vikram Gupta Builds Multi-Industry Empire Across Real Estate, Hospitality, and Global Oil Trade
   </div>
 
-  <!-- Image -->
-  <img class="news-image" src="https://images.unsplash.com/photo-1603415526960-f7e0328a9cbb?w=1200">
+  <!-- IMAGE 1 -->
+  <img class="news-image" src="https://i.postimg.cc/TYvrtK4p/lux-adam-20260327-0003.jpg">
+  <div class="caption">Vikram Gupta during a private business appearance</div>
 
-  <!-- Meta -->
-  <div class="meta">
-    Mar 26 • 5 comments
+  <div class="meta">San Francisco, California • March 2026</div>
+
+  <!-- Content -->
+  <div class="content">
+    Vikram Gupta, an emerging entrepreneur from India, is rapidly expanding his business presence across multiple industries including real estate, finance, hospitality, logistics, manufacturing, warehousing, and global oil import-export operations.
+  </div>
+
+  <!-- IMAGE 2 -->
+  <img class="news-image" src="https://i.postimg.cc/qv0HB76J/lux-adam-20260328-0001.jpg">
+  <div class="caption">Gupta is known for his presence in high-end business and lifestyle sectors</div>
+
+  <div class="content">
+    His portfolio includes ownership of 20+ clubs and 10+ restaurants, making him a strong player in the premium hospitality segment.
+  </div>
+
+  <!-- IMAGE 3 -->
+  <img class="news-image" src="https://i.postimg.cc/kg9PM5RM/lux-adam-20260327-0002.jpg">
+  <div class="caption">One of Gupta’s ventures reflecting his expanding business network</div>
+
+  <div class="content">
+    He has also built a strong logistics and warehousing network that supports both internal operations and external business clients.
+  </div>
+
+  <!-- IMAGE 4 -->
+  <img class="news-image" src="https://i.postimg.cc/vZMw8mxG/lux-adam-20260327-0004.jpg">
+  <div class="caption">Gupta’s business interests span across multiple industries</div>
+
+  <div class="content">
+    Alongside manufacturing, Gupta is actively involved in global oil trade, focusing on import and export operations across international markets.
   </div>
 
 </div>
